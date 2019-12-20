@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UBKAccessibilityInspectorViewController">
+            <connections>
+                <outlet property="layersButton" destination="F6V-ls-7li" id="Z54-CK-XEl"/>
+                <outlet property="tableView" destination="I1W-4H-FtN" id="gmg-mk-XId"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewSelectionControl" destination="pws-wy-dm4" id="udE-q3-HTP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pws-wy-dm4">
+                    <rect key="frame" x="20" y="10" width="335" height="29"/>
+                    <segments>
+                        <segment title="Accessibility"/>
+                        <segment title="Colours"/>
+                        <segment title="Attributes"/>
+                    </segments>
+                    <connections>
+                        <action selector="changeSegmentControlValue:" destination="-1" eventType="valueChanged" id="Ttc-Wk-K92"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I1W-4H-FtN">
+                    <rect key="frame" x="0.0" y="48" width="375" height="184"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="l9E-Sr-3kh"/>
+                        <outlet property="delegate" destination="-1" id="NEt-bq-OqU"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEr-39-osx">
+                    <rect key="frame" x="0.0" y="232" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Layers" id="F6V-ls-7li">
+                            <connections>
+                                <action selector="selectDifferentLayer:" destination="-1" id="H6B-6W-iwQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="I1W-4H-FtN" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="0Rj-u3-Mps"/>
+                <constraint firstItem="pws-wy-dm4" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="KEZ-vB-W8d"/>
+                <constraint firstItem="yEr-39-osx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="NrO-hu-JLG"/>
+                <constraint firstItem="yEr-39-osx" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="Rec-Pj-eNL"/>
+                <constraint firstItem="I1W-4H-FtN" firstAttribute="top" secondItem="pws-wy-dm4" secondAttribute="bottom" constant="10" id="TZy-nA-IJQ"/>
+                <constraint firstItem="yEr-39-osx" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="chP-38-dCd"/>
+                <constraint firstItem="pws-wy-dm4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="gMS-MH-3Wl"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="pws-wy-dm4" secondAttribute="trailing" constant="20" id="hvA-Ec-IcY"/>
+                <constraint firstItem="I1W-4H-FtN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="tCZ-VI-NJO"/>
+                <constraint firstItem="yEr-39-osx" firstAttribute="top" secondItem="I1W-4H-FtN" secondAttribute="bottom" id="tuw-xU-ayF"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="136.80000000000001" y="330.13493253373315"/>
+        </view>
+    </objects>
+</document>

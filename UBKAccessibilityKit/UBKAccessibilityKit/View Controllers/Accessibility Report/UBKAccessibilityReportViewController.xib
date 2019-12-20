@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UBKAccessibilityReportViewController">
+            <connections>
+                <outlet property="appNameLabel" destination="sI0-kt-OFi" id="YNv-tB-2EH"/>
+                <outlet property="collectionView" destination="hZ3-de-lzW" id="dOe-u4-rYf"/>
+                <outlet property="collectionViewHeightConstraint" destination="8OQ-z1-MTj" id="Lxb-2P-hWU"/>
+                <outlet property="flowLayout" destination="zpx-TP-S7U" id="FYf-6l-5FN"/>
+                <outlet property="view" destination="adm-c4-QK6" id="fX2-tU-CXW"/>
+                <outlet property="viewControllerImageView" destination="SPD-lL-8Kx" id="fLK-6p-x3w"/>
+                <outlet property="viewControllerNameLabel" destination="Eey-BF-a0j" id="VP3-Al-l6c"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adm-c4-QK6">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="901"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created using UBKAccessibilityKit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYt-kW-0OT">
+                    <rect key="frame" x="430" y="20" width="150" height="40.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="IlY-7D-R1T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="App name - 1.0 (ABCD12)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sI0-kt-OFi">
+                    <rect key="frame" x="20" y="61.5" width="175" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="RAP-Ia-cHc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="View Controller 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Eey-BF-a0j">
+                    <rect key="frame" x="20" y="20" width="355" height="33.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_accessibilitykit" translatesAutoresizingMaskIntoConstraints="NO" id="Izz-be-n1w">
+                    <rect key="frame" x="395" y="28" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="ZKV-p0-oQ2"/>
+                        <constraint firstAttribute="height" constant="25" id="wom-0K-9CN"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPD-lL-8Kx">
+                    <rect key="frame" x="100" y="116.5" width="400" height="400"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="7lc-J5-tdj"/>
+                        <constraint firstAttribute="height" constant="400" id="7we-eQ-y8J"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="754" insetsLayoutMarginsFromSafeArea="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hZ3-de-lzW">
+                    <rect key="frame" x="20" y="596" width="560" height="285"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="285" id="8OQ-z1-MTj"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="zpx-TP-S7U">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VBq-HA-7DM"/>
+                        <outlet property="delegate" destination="-1" id="4Oz-Hy-psT"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Figure 1. Viewing being inspected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3L-s6-Gyh">
+                    <rect key="frame" x="205.5" y="524.5" width="189.5" height="14.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="UI elements and warnings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnq-Tk-Bxq">
+                    <rect key="frame" x="20" y="569.5" width="560" height="18"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hZ3-de-lzW" firstAttribute="leading" secondItem="adm-c4-QK6" secondAttribute="leading" constant="20" id="1Qa-rZ-G20"/>
+                <constraint firstItem="sI0-kt-OFi" firstAttribute="top" secondItem="Eey-BF-a0j" secondAttribute="bottom" constant="8" id="5qs-lH-9u1"/>
+                <constraint firstItem="Jnq-Tk-Bxq" firstAttribute="top" secondItem="e3L-s6-Gyh" secondAttribute="bottom" constant="30.5" id="DOq-hv-pF4"/>
+                <constraint firstItem="hZ3-de-lzW" firstAttribute="trailing" secondItem="Jnq-Tk-Bxq" secondAttribute="trailing" id="DSc-1f-TSs"/>
+                <constraint firstAttribute="width" constant="600" id="GEc-gj-bw4"/>
+                <constraint firstItem="e3L-s6-Gyh" firstAttribute="centerX" secondItem="SPD-lL-8Kx" secondAttribute="centerX" id="HEW-Z1-dRl"/>
+                <constraint firstAttribute="trailing" secondItem="hZ3-de-lzW" secondAttribute="trailing" constant="20" id="L2d-fU-YSq"/>
+                <constraint firstItem="Eey-BF-a0j" firstAttribute="top" secondItem="adm-c4-QK6" secondAttribute="top" constant="20" id="P52-os-DJH"/>
+                <constraint firstItem="wYt-kW-0OT" firstAttribute="centerY" secondItem="Izz-be-n1w" secondAttribute="centerY" id="QlY-v5-614"/>
+                <constraint firstItem="hZ3-de-lzW" firstAttribute="leading" secondItem="Jnq-Tk-Bxq" secondAttribute="leading" id="Qrs-Z2-mIS"/>
+                <constraint firstItem="Izz-be-n1w" firstAttribute="leading" secondItem="Eey-BF-a0j" secondAttribute="trailing" constant="20" id="U1A-HS-dhO"/>
+                <constraint firstAttribute="bottom" secondItem="hZ3-de-lzW" secondAttribute="bottom" constant="20" id="Vy8-vs-VR6"/>
+                <constraint firstItem="hZ3-de-lzW" firstAttribute="top" secondItem="Jnq-Tk-Bxq" secondAttribute="bottom" constant="8.5" id="YC2-Bo-yJK"/>
+                <constraint firstItem="Eey-BF-a0j" firstAttribute="leading" secondItem="adm-c4-QK6" secondAttribute="leading" constant="20" id="egP-4q-IGP"/>
+                <constraint firstItem="sI0-kt-OFi" firstAttribute="leading" secondItem="adm-c4-QK6" secondAttribute="leading" constant="20" id="fWr-tC-bfn"/>
+                <constraint firstItem="SPD-lL-8Kx" firstAttribute="centerX" secondItem="adm-c4-QK6" secondAttribute="centerX" id="gTq-8d-kca"/>
+                <constraint firstAttribute="trailing" secondItem="wYt-kW-0OT" secondAttribute="trailing" constant="20" id="jhv-Gf-97L"/>
+                <constraint firstItem="wYt-kW-0OT" firstAttribute="top" secondItem="adm-c4-QK6" secondAttribute="top" constant="20" id="nT5-3f-o3D"/>
+                <constraint firstItem="SPD-lL-8Kx" firstAttribute="top" secondItem="sI0-kt-OFi" secondAttribute="bottom" constant="40" id="tUR-VR-2dJ"/>
+                <constraint firstItem="e3L-s6-Gyh" firstAttribute="top" secondItem="SPD-lL-8Kx" secondAttribute="bottom" constant="8" id="u2V-Nd-voh"/>
+                <constraint firstItem="wYt-kW-0OT" firstAttribute="leading" secondItem="Izz-be-n1w" secondAttribute="trailing" constant="10" id="u6h-jK-VbN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="466.66666666666669" y="841.07142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_accessibilitykit" width="50" height="50"/>
+    </resources>
+</document>

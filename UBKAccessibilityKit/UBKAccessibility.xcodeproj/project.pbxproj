@@ -1,0 +1,1362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		542374F421AF64DF00959D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 542374F321AF64DF00959D24 /* AppDelegate.m */; };
+		542374FA21AF64DF00959D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542374F821AF64DF00959D24 /* Main.storyboard */; };
+		542374FC21AF64E100959D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542374FB21AF64E100959D24 /* Assets.xcassets */; };
+		542374FF21AF64E100959D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542374FD21AF64E100959D24 /* LaunchScreen.storyboard */; };
+		5423750221AF64E100959D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423750121AF64E100959D24 /* main.m */; };
+		5450C0DD21B8867300A2CFBF /* UBKAccessibilityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5450C0DB21B8867300A2CFBF /* UBKAccessibilityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0E021B8867300A2CFBF /* UBKAccessibilityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450C0D921B8867300A2CFBF /* UBKAccessibilityKit.framework */; };
+		5450C0E121B8867300A2CFBF /* UBKAccessibilityKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5450C0D921B8867300A2CFBF /* UBKAccessibilityKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5450C0E621B8868200A2CFBF /* UBKColourTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5450C09A21B69BFB00A2CFBF /* UBKColourTableViewCell.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5450C0E721B8868700A2CFBF /* UBKColourTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5450C09B21B69BFB00A2CFBF /* UBKColourTableViewCell.m */; };
+		5450C0E821B8868A00A2CFBF /* UBKColourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5450C09C21B69BFB00A2CFBF /* UBKColourTableViewCell.xib */; };
+		5450C0E921B8868D00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5450C09F21B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5450C0EA21B8869100A2CFBF /* UBKAccessibilityTitleValueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5450C0A021B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.m */; };
+		5450C0EB21B8869700A2CFBF /* UBKAccessibilityTitleValueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5450C0A121B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.xib */; };
+		5450C0EC21B886B800A2CFBF /* UBKAccessibilitySection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5450C09321B616A900A2CFBF /* UBKAccessibilitySection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0ED21B886BF00A2CFBF /* UBKAccessibilityProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5450E71521B4C88C00C6EE53 /* UBKAccessibilityProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0EE21B886C200A2CFBF /* UBKAccessibilityProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5450E71621B4C88C00C6EE53 /* UBKAccessibilityProperty.m */; };
+		5450C0EF21B886C400A2CFBF /* UBKAccessibilitySection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5450C09421B616A900A2CFBF /* UBKAccessibilitySection.m */; };
+		5450C0F021B886C900A2CFBF /* UIColor+HelperMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 5423751821AF8EF600959D24 /* UIColor+HelperMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0F121B886D000A2CFBF /* UIColor+HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423751921AF8EF600959D24 /* UIColor+HelperMethods.m */; };
+		5450C0F221B886D000A2CFBF /* UIView+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = FACB9AC321AF9B8B006EC555 /* UIView+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0F321B886D000A2CFBF /* UIView+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB9AC421AF9B8B006EC555 /* UIView+UBKAccessibility.m */; };
+		5450C0F421B886D000A2CFBF /* UBKAccessibilityProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FACB9AC621AF9BAD006EC555 /* UBKAccessibilityProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0F521B886E800A2CFBF /* UBKAccessibilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5423750B21AF700D00959D24 /* UBKAccessibilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0F621B886EC00A2CFBF /* UBKAccessibilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423750A21AF700D00959D24 /* UBKAccessibilityManager.m */; };
+		5450C0F721B886EF00A2CFBF /* UBKAccessibilityWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5423750D21AF700D00959D24 /* UBKAccessibilityWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5450C0F821B886F300A2CFBF /* UBKAccessibilityWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423750E21AF700D00959D24 /* UBKAccessibilityWindow.m */; };
+		5450C0F921B886F600A2CFBF /* UBKAccessibilityInspectorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5423751121AF700E00959D24 /* UBKAccessibilityInspectorViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5450C0FA21B886FE00A2CFBF /* UBKAccessibilityInspectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5423751021AF700E00959D24 /* UBKAccessibilityInspectorViewController.m */; };
+		5450C0FB21B8870200A2CFBF /* UBKAccessibilityInspectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5423751221AF700E00959D24 /* UBKAccessibilityInspectorViewController.xib */; };
+		5450C0FC21B8A72B00A2CFBF /* UBKAccessibilityInspectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5423751221AF700E00959D24 /* UBKAccessibilityInspectorViewController.xib */; };
+		9FFB5199236A637E0044EFA1 /* UBKAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB5198236A637E0044EFA1 /* UBKAssets.xcassets */; };
+		9FFB519E236A85230044EFA1 /* UILabel+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB519C236A85230044EFA1 /* UILabel+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB519F236A85230044EFA1 /* UILabel+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB519D236A85230044EFA1 /* UILabel+UBKAccessibility.m */; };
+		9FFB51A2236A8AAB0044EFA1 /* UIButton+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB51A0236A8AAB0044EFA1 /* UIButton+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB51A3236A8AAB0044EFA1 /* UIButton+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB51A1236A8AAB0044EFA1 /* UIButton+UBKAccessibility.m */; };
+		9FFB51A7236A91420044EFA1 /* UITextField+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB51A5236A91420044EFA1 /* UITextField+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB51A8236A91420044EFA1 /* UITextField+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB51A6236A91420044EFA1 /* UITextField+UBKAccessibility.m */; };
+		9FFB51AB236A91580044EFA1 /* UIImageView+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB51A9236A91580044EFA1 /* UIImageView+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB51AC236A91580044EFA1 /* UIImageView+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB51AA236A91580044EFA1 /* UIImageView+UBKAccessibility.m */; };
+		9FFB51AF236A916D0044EFA1 /* UISwitch+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB51AD236A916D0044EFA1 /* UISwitch+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB51B0236A916D0044EFA1 /* UISwitch+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB51AE236A916D0044EFA1 /* UISwitch+UBKAccessibility.m */; };
+		9FFB51B3236A91790044EFA1 /* UISlider+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB51B1236A91790044EFA1 /* UISlider+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB51B4236A91790044EFA1 /* UISlider+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB51B2236A91790044EFA1 /* UISlider+UBKAccessibility.m */; };
+		9FFB51B7236A918E0044EFA1 /* UITextView+UBKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB51B5236A918E0044EFA1 /* UITextView+UBKAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB51B8236A918E0044EFA1 /* UITextView+UBKAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB51B6236A918E0044EFA1 /* UITextView+UBKAccessibility.m */; };
+		9FFB51BB236AA5920044EFA1 /* CALayer+HelperMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB51B9236AA5920044EFA1 /* CALayer+HelperMethods.h */; };
+		9FFB51BC236AA5920044EFA1 /* CALayer+HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB51BA236AA5920044EFA1 /* CALayer+HelperMethods.m */; };
+		9FFB52032370CEC80044EFA1 /* UBKAccessibilityColours.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB52012370CEC80044EFA1 /* UBKAccessibilityColours.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FFB52042370CEC80044EFA1 /* UBKAccessibilityColours.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB52022370CEC80044EFA1 /* UBKAccessibilityColours.m */; };
+		A501DB442211417700760570 /* UBKContainerDragButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A501DB422211417700760570 /* UBKContainerDragButton.h */; };
+		A501DB452211417700760570 /* UBKContainerDragButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A501DB432211417700760570 /* UBKContainerDragButton.m */; };
+		A501DCDD221A64E600760570 /* UBKAccessibilityValidColour.h in Headers */ = {isa = PBXBuildFile; fileRef = A501DCDB221A64E600760570 /* UBKAccessibilityValidColour.h */; };
+		A501DCDE221A64E600760570 /* UBKAccessibilityValidColour.m in Sources */ = {isa = PBXBuildFile; fileRef = A501DCDC221A64E600760570 /* UBKAccessibilityValidColour.m */; };
+		A50AAF2721E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A50AAF2521E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.h */; };
+		A50AAF2821E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A50AAF2621E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.m */; };
+		A512A57F220864700085D65B /* UBKAccessibilitySuggestionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A512A57C220864700085D65B /* UBKAccessibilitySuggestionViewController.h */; };
+		A512A580220864700085D65B /* UBKAccessibilitySuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A512A57D220864700085D65B /* UBKAccessibilitySuggestionViewController.m */; };
+		A512A581220864700085D65B /* UBKAccessibilitySuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A512A57E220864700085D65B /* UBKAccessibilitySuggestionViewController.xib */; };
+		A52796A42209605500F8971E /* UBKAccessibilityInspectorContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A52796A22209605500F8971E /* UBKAccessibilityInspectorContainerView.h */; };
+		A52796A52209605500F8971E /* UBKAccessibilityInspectorContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A52796A32209605500F8971E /* UBKAccessibilityInspectorContainerView.m */; };
+		A535575E236F689D009B4577 /* UBKAccessibilityLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A535575D236F689D009B4577 /* UBKAccessibilityLabelTests.m */; };
+		A5355760236F6901009B4577 /* UBKAccessibilityColourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A535575F236F6901009B4577 /* UBKAccessibilityColourTests.m */; };
+		A5355762236F693F009B4577 /* UBKAccessibilityButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5355761236F693F009B4577 /* UBKAccessibilityButtonTests.m */; };
+		A5355764236F6950009B4577 /* UBKAccessibilityTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5355763236F6950009B4577 /* UBKAccessibilityTextFieldTests.m */; };
+		A5355766236F6969009B4577 /* UBKAccessibilityTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5355765236F6969009B4577 /* UBKAccessibilityTextViewTests.m */; };
+		A5355768236F6975009B4577 /* UBKAccessibilityImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5355767236F6975009B4577 /* UBKAccessibilityImageViewTests.m */; };
+		A535576A236F6980009B4577 /* UBKAccessibilitySwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5355769236F6980009B4577 /* UBKAccessibilitySwitchTests.m */; };
+		A535576C236F698B009B4577 /* UBKAccessibilitySliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A535576B236F698B009B4577 /* UBKAccessibilitySliderTests.m */; };
+		A535576D236FD04D009B4577 /* UBKAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB5198236A637E0044EFA1 /* UBKAssets.xcassets */; };
+		A53557D62378D7E6009B4577 /* UBKBadgeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A53557D42378D7E6009B4577 /* UBKBadgeLayer.h */; };
+		A53557D72378D7E6009B4577 /* UBKBadgeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A53557D52378D7E6009B4577 /* UBKBadgeLayer.m */; };
+		A53E5B262317B147004EC911 /* UBKAccessibilityHighlightAction.h in Headers */ = {isa = PBXBuildFile; fileRef = A53E5B242317B147004EC911 /* UBKAccessibilityHighlightAction.h */; };
+		A53E5B272317B147004EC911 /* UBKAccessibilityHighlightAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E5B252317B147004EC911 /* UBKAccessibilityHighlightAction.m */; };
+		A53E5B802318DF7F004EC911 /* UBKAccessibilitySettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A53E5B7D2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.h */; };
+		A53E5B812318DF7F004EC911 /* UBKAccessibilitySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E5B7E2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.m */; };
+		A53E5B822318DF7F004EC911 /* UBKAccessibilitySettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53E5B7F2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.xib */; };
+		A53E5B8E2318FC76004EC911 /* UBKAccessibilityTouchAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = A53E5B8C2318FC75004EC911 /* UBKAccessibilityTouchAnimations.h */; };
+		A53E5B8F2318FC76004EC911 /* UBKAccessibilityTouchAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E5B8D2318FC75004EC911 /* UBKAccessibilityTouchAnimations.m */; };
+		A54BF4982252D75E00DB8B90 /* Icon Template.png in Resources */ = {isa = PBXBuildFile; fileRef = A54BF4972252D75D00DB8B90 /* Icon Template.png */; };
+		A54BF49B2252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A54BF4992252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.h */; };
+		A54BF49C2252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BF49A2252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.m */; };
+		A558496422434E9700D2CE2C /* ImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A558496322434E9700D2CE2C /* ImagesViewController.m */; };
+		A558496722434EA300D2CE2C /* LabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A558496622434EA300D2CE2C /* LabelsViewController.m */; };
+		A558496A22434EAB00D2CE2C /* SlidersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A558496922434EAB00D2CE2C /* SlidersViewController.m */; };
+		A558496D22434EB400D2CE2C /* SwitchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A558496C22434EB400D2CE2C /* SwitchesViewController.m */; };
+		A558497322434EFC00D2CE2C /* TextfieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A558497222434EFC00D2CE2C /* TextfieldsViewController.m */; };
+		A558497722434F4900D2CE2C /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A558497622434F4900D2CE2C /* DemoViewController.m */; };
+		A558497F2243542800D2CE2C /* ButtonsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A558497E2243542800D2CE2C /* ButtonsTableViewController.m */; };
+		A5794DA92251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.h in Headers */ = {isa = PBXBuildFile; fileRef = A5794DA72251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.h */; };
+		A5794DAA2251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5794DA82251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.m */; };
+		A5794DAD2251E91E001D9B75 /* NSArray+HelperMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = A5794DAB2251E91E001D9B75 /* NSArray+HelperMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5794DAE2251E91E001D9B75 /* NSArray+HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A5794DAC2251E91E001D9B75 /* NSArray+HelperMethods.m */; };
+		A57B2C4921E2CB6F00DA582E /* UBKContrastTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A57B2C4621E2CB6F00DA582E /* UBKContrastTableViewCell.h */; };
+		A57B2C4A21E2CB6F00DA582E /* UBKContrastTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A57B2C4721E2CB6F00DA582E /* UBKContrastTableViewCell.m */; };
+		A57B2C4B21E2CB6F00DA582E /* UBKContrastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57B2C4821E2CB6F00DA582E /* UBKContrastTableViewCell.xib */; };
+		A57B711D22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A57B711B22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.h */; };
+		A57B711E22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A57B711C22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.m */; };
+		A581A4EB2368F3DC00C8EBD7 /* UBKAccessibilityTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = A581A4E92368F3DC00C8EBD7 /* UBKAccessibilityTouchView.h */; };
+		A581A4EC2368F3DC00C8EBD7 /* UBKAccessibilityTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = A581A4EA2368F3DC00C8EBD7 /* UBKAccessibilityTouchView.m */; };
+		A58559B421E847D1000C13AD /* UBKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559B221E847D1000C13AD /* UBKNavigationController.h */; };
+		A58559B521E847D1000C13AD /* UBKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A58559B321E847D1000C13AD /* UBKNavigationController.m */; };
+		A58559C021E848A0000C13AD /* UBKAccessibilityElementsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559BD21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.h */; };
+		A58559C121E848A0000C13AD /* UBKAccessibilityElementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A58559BE21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.m */; };
+		A58559C221E848A0000C13AD /* UBKAccessibilityElementsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58559BF21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.xib */; };
+		A58559C621E85456000C13AD /* UBKAccessibilityButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559C421E85456000C13AD /* UBKAccessibilityButton.h */; };
+		A58559C721E85456000C13AD /* UBKAccessibilityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A58559C521E85456000C13AD /* UBKAccessibilityButton.m */; };
+		A58559CB21EBF5EA000C13AD /* UBKUIElementTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559C821EBF5EA000C13AD /* UBKUIElementTableViewCell.h */; };
+		A58559CC21EBF5EA000C13AD /* UBKUIElementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A58559C921EBF5EA000C13AD /* UBKUIElementTableViewCell.m */; };
+		A58559CD21EBF5EA000C13AD /* UBKUIElementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58559CA21EBF5EA000C13AD /* UBKUIElementTableViewCell.xib */; };
+		A58559D021EC0606000C13AD /* UBKAccessibilityValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559CE21EC0606000C13AD /* UBKAccessibilityValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A58559D121EC0606000C13AD /* UBKAccessibilityValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = A58559CF21EC0606000C13AD /* UBKAccessibilityValidation.m */; };
+		A58559D721EC09B2000C13AD /* UBKAccessibilityConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559D621EC09AF000C13AD /* UBKAccessibilityConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A58559F721EDA87B000C13AD /* UBKColourPickerTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559F421EDA87B000C13AD /* UBKColourPickerTableViewController.h */; };
+		A58559F821EDA87B000C13AD /* UBKColourPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A58559F521EDA87B000C13AD /* UBKColourPickerTableViewController.m */; };
+		A58559F921EDA87B000C13AD /* UBKColourPickerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58559F621EDA87B000C13AD /* UBKColourPickerTableViewController.xib */; };
+		A58559FC21EEE63D000C13AD /* UIFont+HelperMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = A58559FA21EEE63D000C13AD /* UIFont+HelperMethods.h */; };
+		A58559FD21EEE63D000C13AD /* UIFont+HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A58559FB21EEE63D000C13AD /* UIFont+HelperMethods.m */; };
+		A594A44E2248EFF000114B36 /* DemoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A594A44D2248EFF000114B36 /* DemoDetailViewController.m */; };
+		A5A8D2672356C15800EC34AE /* UIView+HelperMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A8D2652356C15800EC34AE /* UIView+HelperMethods.h */; };
+		A5A8D2682356C15800EC34AE /* UIView+HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A8D2662356C15800EC34AE /* UIView+HelperMethods.m */; };
+		A5A8D26C2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A8D2692356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.h */; };
+		A5A8D26D2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A8D26A2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.m */; };
+		A5A8D26E2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A8D26B2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.xib */; };
+		A5A8D2722356C1CA00EC34AE /* UBKAccessibilityReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5A8D26F2356C1CA00EC34AE /* UBKAccessibilityReportViewController.xib */; };
+		A5A8D2732356C1CA00EC34AE /* UBKAccessibilityReportViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A8D2702356C1CA00EC34AE /* UBKAccessibilityReportViewController.h */; };
+		A5A8D2742356C1CA00EC34AE /* UBKAccessibilityReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A8D2712356C1CA00EC34AE /* UBKAccessibilityReportViewController.m */; };
+		A5E3D1AF22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E3D1AC22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.h */; };
+		A5E3D1B022D5B6A90032634E /* UBKAccessibilityFilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E3D1AD22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.m */; };
+		A5E3D1B122D5B6A90032634E /* UBKAccessibilityFilterTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E3D1AE22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.xib */; };
+		A5F850DE22D84BA5005AA3A2 /* UBKAccessibilityFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F850DC22D84BA5005AA3A2 /* UBKAccessibilityFilter.h */; };
+		A5F850DF22D84BA5005AA3A2 /* UBKAccessibilityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F850DD22D84BA5005AA3A2 /* UBKAccessibilityFilter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5450C0DE21B8867300A2CFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542374E721AF64DF00959D24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5450C0D821B8867300A2CFBF;
+			remoteInfo = UBKAccessibilityKit;
+		};
+		A52CFBD42224CB8900330DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542374E721AF64DF00959D24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5450C0D821B8867300A2CFBF;
+			remoteInfo = UBKAccessibilityKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5450C0E521B8867300A2CFBF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5450C0E121B8867300A2CFBF /* UBKAccessibilityKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		542374EF21AF64DF00959D24 /* UBKAccessibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBKAccessibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		542374F221AF64DF00959D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		542374F321AF64DF00959D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		542374F921AF64DF00959D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		542374FB21AF64E100959D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		542374FE21AF64E100959D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5423750021AF64E100959D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5423750121AF64E100959D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5423750A21AF700D00959D24 /* UBKAccessibilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityManager.m; sourceTree = "<group>"; };
+		5423750B21AF700D00959D24 /* UBKAccessibilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityManager.h; sourceTree = "<group>"; };
+		5423750D21AF700D00959D24 /* UBKAccessibilityWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityWindow.h; sourceTree = "<group>"; };
+		5423750E21AF700D00959D24 /* UBKAccessibilityWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityWindow.m; sourceTree = "<group>"; };
+		5423751021AF700E00959D24 /* UBKAccessibilityInspectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityInspectorViewController.m; sourceTree = "<group>"; };
+		5423751121AF700E00959D24 /* UBKAccessibilityInspectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityInspectorViewController.h; sourceTree = "<group>"; };
+		5423751221AF700E00959D24 /* UBKAccessibilityInspectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UBKAccessibilityInspectorViewController.xib; sourceTree = "<group>"; };
+		5423751821AF8EF600959D24 /* UIColor+HelperMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HelperMethods.h"; sourceTree = "<group>"; };
+		5423751921AF8EF600959D24 /* UIColor+HelperMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HelperMethods.m"; sourceTree = "<group>"; };
+		5450C09321B616A900A2CFBF /* UBKAccessibilitySection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilitySection.h; sourceTree = "<group>"; };
+		5450C09421B616A900A2CFBF /* UBKAccessibilitySection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilitySection.m; sourceTree = "<group>"; };
+		5450C09A21B69BFB00A2CFBF /* UBKColourTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKColourTableViewCell.h; sourceTree = "<group>"; };
+		5450C09B21B69BFB00A2CFBF /* UBKColourTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKColourTableViewCell.m; sourceTree = "<group>"; };
+		5450C09C21B69BFB00A2CFBF /* UBKColourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKColourTableViewCell.xib; sourceTree = "<group>"; };
+		5450C09F21B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityTitleValueTableViewCell.h; sourceTree = "<group>"; };
+		5450C0A021B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityTitleValueTableViewCell.m; sourceTree = "<group>"; };
+		5450C0A121B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKAccessibilityTitleValueTableViewCell.xib; sourceTree = "<group>"; };
+		5450C0D921B8867300A2CFBF /* UBKAccessibilityKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UBKAccessibilityKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5450C0DB21B8867300A2CFBF /* UBKAccessibilityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityKit.h; sourceTree = "<group>"; };
+		5450C0DC21B8867300A2CFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5450E71521B4C88C00C6EE53 /* UBKAccessibilityProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityProperty.h; sourceTree = "<group>"; };
+		5450E71621B4C88C00C6EE53 /* UBKAccessibilityProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityProperty.m; sourceTree = "<group>"; };
+		9FFB5198236A637E0044EFA1 /* UBKAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UBKAssets.xcassets; sourceTree = "<group>"; };
+		9FFB519C236A85230044EFA1 /* UILabel+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+UBKAccessibility.h"; sourceTree = "<group>"; };
+		9FFB519D236A85230044EFA1 /* UILabel+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+UBKAccessibility.m"; sourceTree = "<group>"; };
+		9FFB51A0236A8AAB0044EFA1 /* UIButton+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+UBKAccessibility.h"; sourceTree = "<group>"; };
+		9FFB51A1236A8AAB0044EFA1 /* UIButton+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UBKAccessibility.m"; sourceTree = "<group>"; };
+		9FFB51A5236A91420044EFA1 /* UITextField+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+UBKAccessibility.h"; sourceTree = "<group>"; };
+		9FFB51A6236A91420044EFA1 /* UITextField+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+UBKAccessibility.m"; sourceTree = "<group>"; };
+		9FFB51A9236A91580044EFA1 /* UIImageView+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UBKAccessibility.h"; sourceTree = "<group>"; };
+		9FFB51AA236A91580044EFA1 /* UIImageView+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UBKAccessibility.m"; sourceTree = "<group>"; };
+		9FFB51AD236A916D0044EFA1 /* UISwitch+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+UBKAccessibility.h"; sourceTree = "<group>"; };
+		9FFB51AE236A916D0044EFA1 /* UISwitch+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+UBKAccessibility.m"; sourceTree = "<group>"; };
+		9FFB51B1236A91790044EFA1 /* UISlider+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISlider+UBKAccessibility.h"; sourceTree = "<group>"; };
+		9FFB51B2236A91790044EFA1 /* UISlider+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISlider+UBKAccessibility.m"; sourceTree = "<group>"; };
+		9FFB51B5236A918E0044EFA1 /* UITextView+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+UBKAccessibility.h"; sourceTree = "<group>"; };
+		9FFB51B6236A918E0044EFA1 /* UITextView+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+UBKAccessibility.m"; sourceTree = "<group>"; };
+		9FFB51B9236AA5920044EFA1 /* CALayer+HelperMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+HelperMethods.h"; sourceTree = "<group>"; };
+		9FFB51BA236AA5920044EFA1 /* CALayer+HelperMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HelperMethods.m"; sourceTree = "<group>"; };
+		9FFB52012370CEC80044EFA1 /* UBKAccessibilityColours.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityColours.h; sourceTree = "<group>"; };
+		9FFB52022370CEC80044EFA1 /* UBKAccessibilityColours.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityColours.m; sourceTree = "<group>"; };
+		A501DB422211417700760570 /* UBKContainerDragButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKContainerDragButton.h; sourceTree = "<group>"; };
+		A501DB432211417700760570 /* UBKContainerDragButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKContainerDragButton.m; sourceTree = "<group>"; };
+		A501DCDB221A64E600760570 /* UBKAccessibilityValidColour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityValidColour.h; sourceTree = "<group>"; };
+		A501DCDC221A64E600760570 /* UBKAccessibilityValidColour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityValidColour.m; sourceTree = "<group>"; };
+		A50AAF2521E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKBaseAccessibilityTableViewCell.h; sourceTree = "<group>"; };
+		A50AAF2621E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKBaseAccessibilityTableViewCell.m; sourceTree = "<group>"; };
+		A512A57C220864700085D65B /* UBKAccessibilitySuggestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilitySuggestionViewController.h; sourceTree = "<group>"; };
+		A512A57D220864700085D65B /* UBKAccessibilitySuggestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilitySuggestionViewController.m; sourceTree = "<group>"; };
+		A512A57E220864700085D65B /* UBKAccessibilitySuggestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKAccessibilitySuggestionViewController.xib; sourceTree = "<group>"; };
+		A514AEA82224797200593757 /* UBKAccessibilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBKAccessibilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A514AEAC2224797200593757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52796A22209605500F8971E /* UBKAccessibilityInspectorContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityInspectorContainerView.h; sourceTree = "<group>"; };
+		A52796A32209605500F8971E /* UBKAccessibilityInspectorContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityInspectorContainerView.m; sourceTree = "<group>"; };
+		A535575D236F689D009B4577 /* UBKAccessibilityLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityLabelTests.m; sourceTree = "<group>"; };
+		A535575F236F6901009B4577 /* UBKAccessibilityColourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityColourTests.m; sourceTree = "<group>"; };
+		A5355761236F693F009B4577 /* UBKAccessibilityButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityButtonTests.m; sourceTree = "<group>"; };
+		A5355763236F6950009B4577 /* UBKAccessibilityTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityTextFieldTests.m; sourceTree = "<group>"; };
+		A5355765236F6969009B4577 /* UBKAccessibilityTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityTextViewTests.m; sourceTree = "<group>"; };
+		A5355767236F6975009B4577 /* UBKAccessibilityImageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityImageViewTests.m; sourceTree = "<group>"; };
+		A5355769236F6980009B4577 /* UBKAccessibilitySwitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilitySwitchTests.m; sourceTree = "<group>"; };
+		A535576B236F698B009B4577 /* UBKAccessibilitySliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilitySliderTests.m; sourceTree = "<group>"; };
+		A53557D42378D7E6009B4577 /* UBKBadgeLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKBadgeLayer.h; sourceTree = "<group>"; };
+		A53557D52378D7E6009B4577 /* UBKBadgeLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKBadgeLayer.m; sourceTree = "<group>"; };
+		A53E5B242317B147004EC911 /* UBKAccessibilityHighlightAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityHighlightAction.h; sourceTree = "<group>"; };
+		A53E5B252317B147004EC911 /* UBKAccessibilityHighlightAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityHighlightAction.m; sourceTree = "<group>"; };
+		A53E5B7D2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilitySettingsViewController.h; sourceTree = "<group>"; };
+		A53E5B7E2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilitySettingsViewController.m; sourceTree = "<group>"; };
+		A53E5B7F2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKAccessibilitySettingsViewController.xib; sourceTree = "<group>"; };
+		A53E5B8C2318FC75004EC911 /* UBKAccessibilityTouchAnimations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityTouchAnimations.h; sourceTree = "<group>"; };
+		A53E5B8D2318FC75004EC911 /* UBKAccessibilityTouchAnimations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityTouchAnimations.m; sourceTree = "<group>"; };
+		A54BF4972252D75D00DB8B90 /* Icon Template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon Template.png"; sourceTree = "<group>"; };
+		A54BF4992252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityInspectorGutterContainerView.h; sourceTree = "<group>"; };
+		A54BF49A2252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityInspectorGutterContainerView.m; sourceTree = "<group>"; };
+		A558496222434E9700D2CE2C /* ImagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagesViewController.h; sourceTree = "<group>"; };
+		A558496322434E9700D2CE2C /* ImagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagesViewController.m; sourceTree = "<group>"; };
+		A558496522434EA300D2CE2C /* LabelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelsViewController.h; sourceTree = "<group>"; };
+		A558496622434EA300D2CE2C /* LabelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelsViewController.m; sourceTree = "<group>"; };
+		A558496822434EAB00D2CE2C /* SlidersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidersViewController.h; sourceTree = "<group>"; };
+		A558496922434EAB00D2CE2C /* SlidersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlidersViewController.m; sourceTree = "<group>"; };
+		A558496B22434EB400D2CE2C /* SwitchesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchesViewController.h; sourceTree = "<group>"; };
+		A558496C22434EB400D2CE2C /* SwitchesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchesViewController.m; sourceTree = "<group>"; };
+		A558497122434EFC00D2CE2C /* TextfieldsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextfieldsViewController.h; sourceTree = "<group>"; };
+		A558497222434EFC00D2CE2C /* TextfieldsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextfieldsViewController.m; sourceTree = "<group>"; };
+		A558497522434F4900D2CE2C /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		A558497622434F4900D2CE2C /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		A558497D2243542800D2CE2C /* ButtonsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonsTableViewController.h; sourceTree = "<group>"; };
+		A558497E2243542800D2CE2C /* ButtonsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonsTableViewController.m; sourceTree = "<group>"; };
+		A5794DA72251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityVisibleWarningView.h; sourceTree = "<group>"; };
+		A5794DA82251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityVisibleWarningView.m; sourceTree = "<group>"; };
+		A5794DAB2251E91E001D9B75 /* NSArray+HelperMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+HelperMethods.h"; sourceTree = "<group>"; };
+		A5794DAC2251E91E001D9B75 /* NSArray+HelperMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HelperMethods.m"; sourceTree = "<group>"; };
+		A57B2C4621E2CB6F00DA582E /* UBKContrastTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKContrastTableViewCell.h; sourceTree = "<group>"; };
+		A57B2C4721E2CB6F00DA582E /* UBKContrastTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKContrastTableViewCell.m; sourceTree = "<group>"; };
+		A57B2C4821E2CB6F00DA582E /* UBKContrastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKContrastTableViewCell.xib; sourceTree = "<group>"; };
+		A57B711B22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityShapeLayer.h; sourceTree = "<group>"; };
+		A57B711C22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityShapeLayer.m; sourceTree = "<group>"; };
+		A581A4E92368F3DC00C8EBD7 /* UBKAccessibilityTouchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityTouchView.h; sourceTree = "<group>"; };
+		A581A4EA2368F3DC00C8EBD7 /* UBKAccessibilityTouchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityTouchView.m; sourceTree = "<group>"; };
+		A58559B221E847D1000C13AD /* UBKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKNavigationController.h; sourceTree = "<group>"; };
+		A58559B321E847D1000C13AD /* UBKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKNavigationController.m; sourceTree = "<group>"; };
+		A58559BD21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityElementsTableViewController.h; sourceTree = "<group>"; };
+		A58559BE21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityElementsTableViewController.m; sourceTree = "<group>"; };
+		A58559BF21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKAccessibilityElementsTableViewController.xib; sourceTree = "<group>"; };
+		A58559C421E85456000C13AD /* UBKAccessibilityButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityButton.h; sourceTree = "<group>"; };
+		A58559C521E85456000C13AD /* UBKAccessibilityButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityButton.m; sourceTree = "<group>"; };
+		A58559C821EBF5EA000C13AD /* UBKUIElementTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKUIElementTableViewCell.h; sourceTree = "<group>"; };
+		A58559C921EBF5EA000C13AD /* UBKUIElementTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKUIElementTableViewCell.m; sourceTree = "<group>"; };
+		A58559CA21EBF5EA000C13AD /* UBKUIElementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKUIElementTableViewCell.xib; sourceTree = "<group>"; };
+		A58559CE21EC0606000C13AD /* UBKAccessibilityValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityValidation.h; sourceTree = "<group>"; };
+		A58559CF21EC0606000C13AD /* UBKAccessibilityValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityValidation.m; sourceTree = "<group>"; };
+		A58559D621EC09AF000C13AD /* UBKAccessibilityConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityConstants.h; sourceTree = "<group>"; };
+		A58559F421EDA87B000C13AD /* UBKColourPickerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKColourPickerTableViewController.h; sourceTree = "<group>"; };
+		A58559F521EDA87B000C13AD /* UBKColourPickerTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKColourPickerTableViewController.m; sourceTree = "<group>"; };
+		A58559F621EDA87B000C13AD /* UBKColourPickerTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKColourPickerTableViewController.xib; sourceTree = "<group>"; };
+		A58559FA21EEE63D000C13AD /* UIFont+HelperMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+HelperMethods.h"; sourceTree = "<group>"; };
+		A58559FB21EEE63D000C13AD /* UIFont+HelperMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+HelperMethods.m"; sourceTree = "<group>"; };
+		A594A44C2248EFF000114B36 /* DemoDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoDetailViewController.h; sourceTree = "<group>"; };
+		A594A44D2248EFF000114B36 /* DemoDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoDetailViewController.m; sourceTree = "<group>"; };
+		A5A8D2652356C15800EC34AE /* UIView+HelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HelperMethods.h"; sourceTree = "<group>"; };
+		A5A8D2662356C15800EC34AE /* UIView+HelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HelperMethods.m"; sourceTree = "<group>"; };
+		A5A8D2692356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBKReportUIElementCollectionViewCell.h; sourceTree = "<group>"; };
+		A5A8D26A2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBKReportUIElementCollectionViewCell.m; sourceTree = "<group>"; };
+		A5A8D26B2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UBKReportUIElementCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5A8D26F2356C1CA00EC34AE /* UBKAccessibilityReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UBKAccessibilityReportViewController.xib; sourceTree = "<group>"; };
+		A5A8D2702356C1CA00EC34AE /* UBKAccessibilityReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityReportViewController.h; sourceTree = "<group>"; };
+		A5A8D2712356C1CA00EC34AE /* UBKAccessibilityReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityReportViewController.m; sourceTree = "<group>"; };
+		A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UBKConfig.xcconfig; sourceTree = "<group>"; };
+		A5C7F44323AC2C6D00888E98 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A5E3D1AC22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityFilterTableViewController.h; sourceTree = "<group>"; };
+		A5E3D1AD22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityFilterTableViewController.m; sourceTree = "<group>"; };
+		A5E3D1AE22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UBKAccessibilityFilterTableViewController.xib; sourceTree = "<group>"; };
+		A5F850DC22D84BA5005AA3A2 /* UBKAccessibilityFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityFilter.h; sourceTree = "<group>"; };
+		A5F850DD22D84BA5005AA3A2 /* UBKAccessibilityFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBKAccessibilityFilter.m; sourceTree = "<group>"; };
+		FACB9AC321AF9B8B006EC555 /* UIView+UBKAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UBKAccessibility.h"; sourceTree = "<group>"; };
+		FACB9AC421AF9B8B006EC555 /* UIView+UBKAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UBKAccessibility.m"; sourceTree = "<group>"; };
+		FACB9AC621AF9BAD006EC555 /* UBKAccessibilityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UBKAccessibilityProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		542374EC21AF64DF00959D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5450C0E021B8867300A2CFBF /* UBKAccessibilityKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5450C0D621B8867300A2CFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514AEA52224797200593757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		542374E621AF64DF00959D24 = {
+			isa = PBXGroup;
+			children = (
+				A5C7F44323AC2C6D00888E98 /* README.md */,
+				542374F121AF64DF00959D24 /* UBKAccessibility */,
+				5450C0DA21B8867300A2CFBF /* UBKAccessibilityKit */,
+				A514AEA92224797200593757 /* UBKAccessibilityTests */,
+				A5C7F3CC23A9B28700888E98 /* Configuration */,
+				542374F021AF64DF00959D24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		542374F021AF64DF00959D24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				542374EF21AF64DF00959D24 /* UBKAccessibility.app */,
+				5450C0D921B8867300A2CFBF /* UBKAccessibilityKit.framework */,
+				A514AEA82224797200593757 /* UBKAccessibilityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		542374F121AF64DF00959D24 /* UBKAccessibility */ = {
+			isa = PBXGroup;
+			children = (
+				542374F221AF64DF00959D24 /* AppDelegate.h */,
+				542374F321AF64DF00959D24 /* AppDelegate.m */,
+				542374FD21AF64E100959D24 /* LaunchScreen.storyboard */,
+				542374F821AF64DF00959D24 /* Main.storyboard */,
+				9FFB5205237121410044EFA1 /* View Controllers */,
+				9FFB5206237121560044EFA1 /* Supporting Files */,
+			);
+			path = UBKAccessibility;
+			sourceTree = "<group>";
+		};
+		5423750821AF6FE500959D24 /* Accessibility Kit */ = {
+			isa = PBXGroup;
+			children = (
+				5423750921AF700D00959D24 /* Accessibility Manager */,
+				5423750C21AF700D00959D24 /* Accessibility Window */,
+				5423751721AF8EC300959D24 /* Categories */,
+				A58559C321E85436000C13AD /* Classes */,
+				A58559B121E847A9000C13AD /* Navigation Manager */,
+			);
+			path = "Accessibility Kit";
+			sourceTree = "<group>";
+		};
+		5423750921AF700D00959D24 /* Accessibility Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5423750B21AF700D00959D24 /* UBKAccessibilityManager.h */,
+				5423750A21AF700D00959D24 /* UBKAccessibilityManager.m */,
+			);
+			path = "Accessibility Manager";
+			sourceTree = "<group>";
+		};
+		5423750C21AF700D00959D24 /* Accessibility Window */ = {
+			isa = PBXGroup;
+			children = (
+				5423750D21AF700D00959D24 /* UBKAccessibilityWindow.h */,
+				5423750E21AF700D00959D24 /* UBKAccessibilityWindow.m */,
+			);
+			path = "Accessibility Window";
+			sourceTree = "<group>";
+		};
+		5423750F21AF700E00959D24 /* Accessibility Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				5423751121AF700E00959D24 /* UBKAccessibilityInspectorViewController.h */,
+				5423751021AF700E00959D24 /* UBKAccessibilityInspectorViewController.m */,
+				5423751221AF700E00959D24 /* UBKAccessibilityInspectorViewController.xib */,
+			);
+			path = "Accessibility Inspector";
+			sourceTree = "<group>";
+		};
+		5423751721AF8EC300959D24 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9FFB51A4236A8B220044EFA1 /* Helpers */,
+				FACB9AC621AF9BAD006EC555 /* UBKAccessibilityProtocol.h */,
+				FACB9AC321AF9B8B006EC555 /* UIView+UBKAccessibility.h */,
+				FACB9AC421AF9B8B006EC555 /* UIView+UBKAccessibility.m */,
+				9FFB519C236A85230044EFA1 /* UILabel+UBKAccessibility.h */,
+				9FFB519D236A85230044EFA1 /* UILabel+UBKAccessibility.m */,
+				9FFB51A0236A8AAB0044EFA1 /* UIButton+UBKAccessibility.h */,
+				9FFB51A1236A8AAB0044EFA1 /* UIButton+UBKAccessibility.m */,
+				9FFB51A5236A91420044EFA1 /* UITextField+UBKAccessibility.h */,
+				9FFB51A6236A91420044EFA1 /* UITextField+UBKAccessibility.m */,
+				9FFB51B5236A918E0044EFA1 /* UITextView+UBKAccessibility.h */,
+				9FFB51B6236A918E0044EFA1 /* UITextView+UBKAccessibility.m */,
+				9FFB51A9236A91580044EFA1 /* UIImageView+UBKAccessibility.h */,
+				9FFB51AA236A91580044EFA1 /* UIImageView+UBKAccessibility.m */,
+				9FFB51AD236A916D0044EFA1 /* UISwitch+UBKAccessibility.h */,
+				9FFB51AE236A916D0044EFA1 /* UISwitch+UBKAccessibility.m */,
+				9FFB51B1236A91790044EFA1 /* UISlider+UBKAccessibility.h */,
+				9FFB51B2236A91790044EFA1 /* UISlider+UBKAccessibility.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5450C09921B69BDF00A2CFBF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A50AAF2521E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.h */,
+				A50AAF2621E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.m */,
+				5450C09A21B69BFB00A2CFBF /* UBKColourTableViewCell.h */,
+				5450C09B21B69BFB00A2CFBF /* UBKColourTableViewCell.m */,
+				5450C09C21B69BFB00A2CFBF /* UBKColourTableViewCell.xib */,
+				5450C09F21B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.h */,
+				5450C0A021B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.m */,
+				5450C0A121B6A54F00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.xib */,
+				A57B2C4621E2CB6F00DA582E /* UBKContrastTableViewCell.h */,
+				A57B2C4721E2CB6F00DA582E /* UBKContrastTableViewCell.m */,
+				A57B2C4821E2CB6F00DA582E /* UBKContrastTableViewCell.xib */,
+				A58559C821EBF5EA000C13AD /* UBKUIElementTableViewCell.h */,
+				A58559C921EBF5EA000C13AD /* UBKUIElementTableViewCell.m */,
+				A58559CA21EBF5EA000C13AD /* UBKUIElementTableViewCell.xib */,
+				A5A8D2692356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.h */,
+				A5A8D26A2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.m */,
+				A5A8D26B2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5450C0DA21B8867300A2CFBF /* UBKAccessibilityKit */ = {
+			isa = PBXGroup;
+			children = (
+				9FFB519B236A65BA0044EFA1 /* View Controllers */,
+				5423750821AF6FE500959D24 /* Accessibility Kit */,
+				A512A51222007A810085D65B /* Supporting Files */,
+				5450C0DB21B8867300A2CFBF /* UBKAccessibilityKit.h */,
+				5450C0DC21B8867300A2CFBF /* Info.plist */,
+			);
+			path = UBKAccessibilityKit;
+			sourceTree = "<group>";
+		};
+		9FFB519A236A648A0044EFA1 /* Accessibility Report */ = {
+			isa = PBXGroup;
+			children = (
+				A5A8D2702356C1CA00EC34AE /* UBKAccessibilityReportViewController.h */,
+				A5A8D2712356C1CA00EC34AE /* UBKAccessibilityReportViewController.m */,
+				A5A8D26F2356C1CA00EC34AE /* UBKAccessibilityReportViewController.xib */,
+			);
+			path = "Accessibility Report";
+			sourceTree = "<group>";
+		};
+		9FFB519B236A65BA0044EFA1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5450C09921B69BDF00A2CFBF /* Cells */,
+				A58559F321EDA83D000C13AD /* Accessibility Colour Picker */,
+				5423750F21AF700E00959D24 /* Accessibility Inspector */,
+				9FFB519A236A648A0044EFA1 /* Accessibility Report */,
+				A512A57B220864430085D65B /* Accessibility Suggestions */,
+				A58559B621E8484F000C13AD /* Elements List */,
+				A5E3D1A522D5B6630032634E /* Filter View */,
+				A53E5B7C2318B7EE004EC911 /* Settings View */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9FFB51A4236A8B220044EFA1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A5794DAB2251E91E001D9B75 /* NSArray+HelperMethods.h */,
+				A5794DAC2251E91E001D9B75 /* NSArray+HelperMethods.m */,
+				A5A8D2652356C15800EC34AE /* UIView+HelperMethods.h */,
+				A5A8D2662356C15800EC34AE /* UIView+HelperMethods.m */,
+				5423751821AF8EF600959D24 /* UIColor+HelperMethods.h */,
+				5423751921AF8EF600959D24 /* UIColor+HelperMethods.m */,
+				A58559FA21EEE63D000C13AD /* UIFont+HelperMethods.h */,
+				A58559FB21EEE63D000C13AD /* UIFont+HelperMethods.m */,
+				9FFB51B9236AA5920044EFA1 /* CALayer+HelperMethods.h */,
+				9FFB51BA236AA5920044EFA1 /* CALayer+HelperMethods.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9FFB5205237121410044EFA1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A558495922434E2000D2CE2C /* Buttons */,
+				A558497422434F2300D2CE2C /* Demo */,
+				A558495D22434E5E00D2CE2C /* Images */,
+				A558495E22434E6C00D2CE2C /* Labels */,
+				A558495F22434E7500D2CE2C /* Sliders */,
+				A558496022434E7C00D2CE2C /* Switches */,
+				A558496122434E8400D2CE2C /* Textfields */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9FFB5206237121560044EFA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				542374FB21AF64E100959D24 /* Assets.xcassets */,
+				A54BF4972252D75D00DB8B90 /* Icon Template.png */,
+				5423750021AF64E100959D24 /* Info.plist */,
+				5423750121AF64E100959D24 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A512A51222007A810085D65B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FFB5198236A637E0044EFA1 /* UBKAssets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A512A57B220864430085D65B /* Accessibility Suggestions */ = {
+			isa = PBXGroup;
+			children = (
+				A512A57C220864700085D65B /* UBKAccessibilitySuggestionViewController.h */,
+				A512A57D220864700085D65B /* UBKAccessibilitySuggestionViewController.m */,
+				A512A57E220864700085D65B /* UBKAccessibilitySuggestionViewController.xib */,
+			);
+			path = "Accessibility Suggestions";
+			sourceTree = "<group>";
+		};
+		A514AEA92224797200593757 /* UBKAccessibilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				A514AEAC2224797200593757 /* Info.plist */,
+				A535575F236F6901009B4577 /* UBKAccessibilityColourTests.m */,
+				A535575D236F689D009B4577 /* UBKAccessibilityLabelTests.m */,
+				A5355761236F693F009B4577 /* UBKAccessibilityButtonTests.m */,
+				A5355763236F6950009B4577 /* UBKAccessibilityTextFieldTests.m */,
+				A5355765236F6969009B4577 /* UBKAccessibilityTextViewTests.m */,
+				A5355767236F6975009B4577 /* UBKAccessibilityImageViewTests.m */,
+				A5355769236F6980009B4577 /* UBKAccessibilitySwitchTests.m */,
+				A535576B236F698B009B4577 /* UBKAccessibilitySliderTests.m */,
+			);
+			path = UBKAccessibilityTests;
+			sourceTree = "<group>";
+		};
+		A53E5B7C2318B7EE004EC911 /* Settings View */ = {
+			isa = PBXGroup;
+			children = (
+				A53E5B7D2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.h */,
+				A53E5B7E2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.m */,
+				A53E5B7F2318DF7F004EC911 /* UBKAccessibilitySettingsViewController.xib */,
+			);
+			path = "Settings View";
+			sourceTree = "<group>";
+		};
+		A558495922434E2000D2CE2C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A558497D2243542800D2CE2C /* ButtonsTableViewController.h */,
+				A558497E2243542800D2CE2C /* ButtonsTableViewController.m */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		A558495D22434E5E00D2CE2C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A558496222434E9700D2CE2C /* ImagesViewController.h */,
+				A558496322434E9700D2CE2C /* ImagesViewController.m */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A558495E22434E6C00D2CE2C /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				A558496522434EA300D2CE2C /* LabelsViewController.h */,
+				A558496622434EA300D2CE2C /* LabelsViewController.m */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		A558495F22434E7500D2CE2C /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				A558496822434EAB00D2CE2C /* SlidersViewController.h */,
+				A558496922434EAB00D2CE2C /* SlidersViewController.m */,
+			);
+			path = Sliders;
+			sourceTree = "<group>";
+		};
+		A558496022434E7C00D2CE2C /* Switches */ = {
+			isa = PBXGroup;
+			children = (
+				A558496B22434EB400D2CE2C /* SwitchesViewController.h */,
+				A558496C22434EB400D2CE2C /* SwitchesViewController.m */,
+			);
+			path = Switches;
+			sourceTree = "<group>";
+		};
+		A558496122434E8400D2CE2C /* Textfields */ = {
+			isa = PBXGroup;
+			children = (
+				A558497122434EFC00D2CE2C /* TextfieldsViewController.h */,
+				A558497222434EFC00D2CE2C /* TextfieldsViewController.m */,
+			);
+			path = Textfields;
+			sourceTree = "<group>";
+		};
+		A558497422434F2300D2CE2C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A558497522434F4900D2CE2C /* DemoViewController.h */,
+				A558497622434F4900D2CE2C /* DemoViewController.m */,
+				A594A44C2248EFF000114B36 /* DemoDetailViewController.h */,
+				A594A44D2248EFF000114B36 /* DemoDetailViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		A58559B121E847A9000C13AD /* Navigation Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A52796A22209605500F8971E /* UBKAccessibilityInspectorContainerView.h */,
+				A52796A32209605500F8971E /* UBKAccessibilityInspectorContainerView.m */,
+				A58559B221E847D1000C13AD /* UBKNavigationController.h */,
+				A58559B321E847D1000C13AD /* UBKNavigationController.m */,
+			);
+			path = "Navigation Manager";
+			sourceTree = "<group>";
+		};
+		A58559B621E8484F000C13AD /* Elements List */ = {
+			isa = PBXGroup;
+			children = (
+				A58559BD21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.h */,
+				A58559BE21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.m */,
+				A58559BF21E848A0000C13AD /* UBKAccessibilityElementsTableViewController.xib */,
+			);
+			path = "Elements List";
+			sourceTree = "<group>";
+		};
+		A58559C321E85436000C13AD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A58559C421E85456000C13AD /* UBKAccessibilityButton.h */,
+				A58559C521E85456000C13AD /* UBKAccessibilityButton.m */,
+				A53557D42378D7E6009B4577 /* UBKBadgeLayer.h */,
+				A53557D52378D7E6009B4577 /* UBKBadgeLayer.m */,
+				9FFB52012370CEC80044EFA1 /* UBKAccessibilityColours.h */,
+				9FFB52022370CEC80044EFA1 /* UBKAccessibilityColours.m */,
+				A58559D621EC09AF000C13AD /* UBKAccessibilityConstants.h */,
+				A53E5B242317B147004EC911 /* UBKAccessibilityHighlightAction.h */,
+				A53E5B252317B147004EC911 /* UBKAccessibilityHighlightAction.m */,
+				A54BF4992252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.h */,
+				A54BF49A2252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.m */,
+				5450E71521B4C88C00C6EE53 /* UBKAccessibilityProperty.h */,
+				5450E71621B4C88C00C6EE53 /* UBKAccessibilityProperty.m */,
+				5450C09321B616A900A2CFBF /* UBKAccessibilitySection.h */,
+				5450C09421B616A900A2CFBF /* UBKAccessibilitySection.m */,
+				A57B711B22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.h */,
+				A57B711C22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.m */,
+				A53E5B8C2318FC75004EC911 /* UBKAccessibilityTouchAnimations.h */,
+				A53E5B8D2318FC75004EC911 /* UBKAccessibilityTouchAnimations.m */,
+				A581A4E92368F3DC00C8EBD7 /* UBKAccessibilityTouchView.h */,
+				A581A4EA2368F3DC00C8EBD7 /* UBKAccessibilityTouchView.m */,
+				A58559CE21EC0606000C13AD /* UBKAccessibilityValidation.h */,
+				A58559CF21EC0606000C13AD /* UBKAccessibilityValidation.m */,
+				A501DCDB221A64E600760570 /* UBKAccessibilityValidColour.h */,
+				A501DCDC221A64E600760570 /* UBKAccessibilityValidColour.m */,
+				A5794DA72251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.h */,
+				A5794DA82251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.m */,
+				A501DB422211417700760570 /* UBKContainerDragButton.h */,
+				A501DB432211417700760570 /* UBKContainerDragButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A58559F321EDA83D000C13AD /* Accessibility Colour Picker */ = {
+			isa = PBXGroup;
+			children = (
+				A58559F421EDA87B000C13AD /* UBKColourPickerTableViewController.h */,
+				A58559F521EDA87B000C13AD /* UBKColourPickerTableViewController.m */,
+				A58559F621EDA87B000C13AD /* UBKColourPickerTableViewController.xib */,
+			);
+			path = "Accessibility Colour Picker";
+			sourceTree = "<group>";
+		};
+		A5C7F3CC23A9B28700888E98 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A5E3D1A522D5B6630032634E /* Filter View */ = {
+			isa = PBXGroup;
+			children = (
+				A5E3D1AC22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.h */,
+				A5E3D1AD22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.m */,
+				A5E3D1AE22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.xib */,
+				A5F850DC22D84BA5005AA3A2 /* UBKAccessibilityFilter.h */,
+				A5F850DD22D84BA5005AA3A2 /* UBKAccessibilityFilter.m */,
+			);
+			path = "Filter View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5450C0D421B8867300A2CFBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5450C0F721B886EF00A2CFBF /* UBKAccessibilityWindow.h in Headers */,
+				A501DCDD221A64E600760570 /* UBKAccessibilityValidColour.h in Headers */,
+				A53E5B802318DF7F004EC911 /* UBKAccessibilitySettingsViewController.h in Headers */,
+				5450C0E921B8868D00A2CFBF /* UBKAccessibilityTitleValueTableViewCell.h in Headers */,
+				A58559D721EC09B2000C13AD /* UBKAccessibilityConstants.h in Headers */,
+				9FFB519E236A85230044EFA1 /* UILabel+UBKAccessibility.h in Headers */,
+				5450C0F021B886C900A2CFBF /* UIColor+HelperMethods.h in Headers */,
+				A53E5B262317B147004EC911 /* UBKAccessibilityHighlightAction.h in Headers */,
+				A58559B421E847D1000C13AD /* UBKNavigationController.h in Headers */,
+				A58559C621E85456000C13AD /* UBKAccessibilityButton.h in Headers */,
+				9FFB51A2236A8AAB0044EFA1 /* UIButton+UBKAccessibility.h in Headers */,
+				A581A4EB2368F3DC00C8EBD7 /* UBKAccessibilityTouchView.h in Headers */,
+				A5794DAD2251E91E001D9B75 /* NSArray+HelperMethods.h in Headers */,
+				A5F850DE22D84BA5005AA3A2 /* UBKAccessibilityFilter.h in Headers */,
+				A50AAF2721E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.h in Headers */,
+				A57B2C4921E2CB6F00DA582E /* UBKContrastTableViewCell.h in Headers */,
+				A57B711D22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.h in Headers */,
+				9FFB51A7236A91420044EFA1 /* UITextField+UBKAccessibility.h in Headers */,
+				A58559CB21EBF5EA000C13AD /* UBKUIElementTableViewCell.h in Headers */,
+				A58559F721EDA87B000C13AD /* UBKColourPickerTableViewController.h in Headers */,
+				A5E3D1AF22D5B6A80032634E /* UBKAccessibilityFilterTableViewController.h in Headers */,
+				5450C0F221B886D000A2CFBF /* UIView+UBKAccessibility.h in Headers */,
+				A5A8D2732356C1CA00EC34AE /* UBKAccessibilityReportViewController.h in Headers */,
+				9FFB51B3236A91790044EFA1 /* UISlider+UBKAccessibility.h in Headers */,
+				5450C0F521B886E800A2CFBF /* UBKAccessibilityManager.h in Headers */,
+				9FFB52032370CEC80044EFA1 /* UBKAccessibilityColours.h in Headers */,
+				A54BF49B2252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.h in Headers */,
+				9FFB51AB236A91580044EFA1 /* UIImageView+UBKAccessibility.h in Headers */,
+				A53E5B8E2318FC76004EC911 /* UBKAccessibilityTouchAnimations.h in Headers */,
+				A52796A42209605500F8971E /* UBKAccessibilityInspectorContainerView.h in Headers */,
+				5450C0DD21B8867300A2CFBF /* UBKAccessibilityKit.h in Headers */,
+				A5A8D26C2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.h in Headers */,
+				9FFB51AF236A916D0044EFA1 /* UISwitch+UBKAccessibility.h in Headers */,
+				A5794DA92251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.h in Headers */,
+				A58559D021EC0606000C13AD /* UBKAccessibilityValidation.h in Headers */,
+				5450C0EC21B886B800A2CFBF /* UBKAccessibilitySection.h in Headers */,
+				A58559FC21EEE63D000C13AD /* UIFont+HelperMethods.h in Headers */,
+				5450C0E621B8868200A2CFBF /* UBKColourTableViewCell.h in Headers */,
+				5450C0F921B886F600A2CFBF /* UBKAccessibilityInspectorViewController.h in Headers */,
+				A58559C021E848A0000C13AD /* UBKAccessibilityElementsTableViewController.h in Headers */,
+				9FFB51B7236A918E0044EFA1 /* UITextView+UBKAccessibility.h in Headers */,
+				5450C0F421B886D000A2CFBF /* UBKAccessibilityProtocol.h in Headers */,
+				A501DB442211417700760570 /* UBKContainerDragButton.h in Headers */,
+				A5A8D2672356C15800EC34AE /* UIView+HelperMethods.h in Headers */,
+				A53557D62378D7E6009B4577 /* UBKBadgeLayer.h in Headers */,
+				5450C0ED21B886BF00A2CFBF /* UBKAccessibilityProperty.h in Headers */,
+				9FFB51BB236AA5920044EFA1 /* CALayer+HelperMethods.h in Headers */,
+				A512A57F220864700085D65B /* UBKAccessibilitySuggestionViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		542374EE21AF64DF00959D24 /* UBKAccessibility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5423750521AF64E100959D24 /* Build configuration list for PBXNativeTarget "UBKAccessibility" */;
+			buildPhases = (
+				542374EB21AF64DF00959D24 /* Sources */,
+				542374EC21AF64DF00959D24 /* Frameworks */,
+				542374ED21AF64DF00959D24 /* Resources */,
+				5450C0E521B8867300A2CFBF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5450C0DF21B8867300A2CFBF /* PBXTargetDependency */,
+			);
+			name = UBKAccessibility;
+			productName = UBKAccessibilityKit;
+			productReference = 542374EF21AF64DF00959D24 /* UBKAccessibility.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5450C0D821B8867300A2CFBF /* UBKAccessibilityKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5450C0E221B8867300A2CFBF /* Build configuration list for PBXNativeTarget "UBKAccessibilityKit" */;
+			buildPhases = (
+				5450C0D421B8867300A2CFBF /* Headers */,
+				5450C0D521B8867300A2CFBF /* Sources */,
+				5450C0D621B8867300A2CFBF /* Frameworks */,
+				5450C0D721B8867300A2CFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UBKAccessibilityKit;
+			productName = UBKAccessibilityKit;
+			productReference = 5450C0D921B8867300A2CFBF /* UBKAccessibilityKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A514AEA72224797200593757 /* UBKAccessibilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A514AEB12224797200593757 /* Build configuration list for PBXNativeTarget "UBKAccessibilityTests" */;
+			buildPhases = (
+				A514AEA42224797200593757 /* Sources */,
+				A514AEA52224797200593757 /* Frameworks */,
+				A514AEA62224797200593757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A52CFBD52224CB8900330DEB /* PBXTargetDependency */,
+			);
+			name = UBKAccessibilityTests;
+			productName = UBKAccessibilityTests;
+			productReference = A514AEA82224797200593757 /* UBKAccessibilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		542374E721AF64DF00959D24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = UBank;
+				TargetAttributes = {
+					542374EE21AF64DF00959D24 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5450C0D821B8867300A2CFBF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A514AEA72224797200593757 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 542374EE21AF64DF00959D24;
+					};
+				};
+			};
+			buildConfigurationList = 542374EA21AF64DF00959D24 /* Build configuration list for PBXProject "UBKAccessibility" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 542374E621AF64DF00959D24;
+			productRefGroup = 542374F021AF64DF00959D24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				542374EE21AF64DF00959D24 /* UBKAccessibility */,
+				5450C0D821B8867300A2CFBF /* UBKAccessibilityKit */,
+				A514AEA72224797200593757 /* UBKAccessibilityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542374ED21AF64DF00959D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542374FF21AF64E100959D24 /* LaunchScreen.storyboard in Resources */,
+				542374FC21AF64E100959D24 /* Assets.xcassets in Resources */,
+				A54BF4982252D75E00DB8B90 /* Icon Template.png in Resources */,
+				5450C0FC21B8A72B00A2CFBF /* UBKAccessibilityInspectorViewController.xib in Resources */,
+				542374FA21AF64DF00959D24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5450C0D721B8867300A2CFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58559C221E848A0000C13AD /* UBKAccessibilityElementsTableViewController.xib in Resources */,
+				5450C0EB21B8869700A2CFBF /* UBKAccessibilityTitleValueTableViewCell.xib in Resources */,
+				A58559CD21EBF5EA000C13AD /* UBKUIElementTableViewCell.xib in Resources */,
+				A5E3D1B122D5B6A90032634E /* UBKAccessibilityFilterTableViewController.xib in Resources */,
+				A5A8D2722356C1CA00EC34AE /* UBKAccessibilityReportViewController.xib in Resources */,
+				A5A8D26E2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.xib in Resources */,
+				5450C0E821B8868A00A2CFBF /* UBKColourTableViewCell.xib in Resources */,
+				5450C0FB21B8870200A2CFBF /* UBKAccessibilityInspectorViewController.xib in Resources */,
+				A58559F921EDA87B000C13AD /* UBKColourPickerTableViewController.xib in Resources */,
+				A57B2C4B21E2CB6F00DA582E /* UBKContrastTableViewCell.xib in Resources */,
+				9FFB5199236A637E0044EFA1 /* UBKAssets.xcassets in Resources */,
+				A512A581220864700085D65B /* UBKAccessibilitySuggestionViewController.xib in Resources */,
+				A53E5B822318DF7F004EC911 /* UBKAccessibilitySettingsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514AEA62224797200593757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A535576D236FD04D009B4577 /* UBKAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		542374EB21AF64DF00959D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A558497322434EFC00D2CE2C /* TextfieldsViewController.m in Sources */,
+				A558497F2243542800D2CE2C /* ButtonsTableViewController.m in Sources */,
+				A558497722434F4900D2CE2C /* DemoViewController.m in Sources */,
+				5423750221AF64E100959D24 /* main.m in Sources */,
+				A558496A22434EAB00D2CE2C /* SlidersViewController.m in Sources */,
+				A558496422434E9700D2CE2C /* ImagesViewController.m in Sources */,
+				A558496D22434EB400D2CE2C /* SwitchesViewController.m in Sources */,
+				A558496722434EA300D2CE2C /* LabelsViewController.m in Sources */,
+				A594A44E2248EFF000114B36 /* DemoDetailViewController.m in Sources */,
+				542374F421AF64DF00959D24 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5450C0D521B8867300A2CFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5450C0EA21B8869100A2CFBF /* UBKAccessibilityTitleValueTableViewCell.m in Sources */,
+				A5794DAE2251E91E001D9B75 /* NSArray+HelperMethods.m in Sources */,
+				A58559FD21EEE63D000C13AD /* UIFont+HelperMethods.m in Sources */,
+				A53E5B812318DF7F004EC911 /* UBKAccessibilitySettingsViewController.m in Sources */,
+				A53557D72378D7E6009B4577 /* UBKBadgeLayer.m in Sources */,
+				A57B711E22E6BB9B0081C874 /* UBKAccessibilityShapeLayer.m in Sources */,
+				A5F850DF22D84BA5005AA3A2 /* UBKAccessibilityFilter.m in Sources */,
+				5450C0EE21B886C200A2CFBF /* UBKAccessibilityProperty.m in Sources */,
+				5450C0E721B8868700A2CFBF /* UBKColourTableViewCell.m in Sources */,
+				9FFB51B4236A91790044EFA1 /* UISlider+UBKAccessibility.m in Sources */,
+				A50AAF2821E6F96300D4BECE /* UBKBaseAccessibilityTableViewCell.m in Sources */,
+				5450C0FA21B886FE00A2CFBF /* UBKAccessibilityInspectorViewController.m in Sources */,
+				A52796A52209605500F8971E /* UBKAccessibilityInspectorContainerView.m in Sources */,
+				5450C0F321B886D000A2CFBF /* UIView+UBKAccessibility.m in Sources */,
+				A58559CC21EBF5EA000C13AD /* UBKUIElementTableViewCell.m in Sources */,
+				A58559B521E847D1000C13AD /* UBKNavigationController.m in Sources */,
+				A5E3D1B022D5B6A90032634E /* UBKAccessibilityFilterTableViewController.m in Sources */,
+				9FFB52042370CEC80044EFA1 /* UBKAccessibilityColours.m in Sources */,
+				A501DB452211417700760570 /* UBKContainerDragButton.m in Sources */,
+				5450C0F121B886D000A2CFBF /* UIColor+HelperMethods.m in Sources */,
+				9FFB51AC236A91580044EFA1 /* UIImageView+UBKAccessibility.m in Sources */,
+				5450C0F821B886F300A2CFBF /* UBKAccessibilityWindow.m in Sources */,
+				A58559F821EDA87B000C13AD /* UBKColourPickerTableViewController.m in Sources */,
+				A5A8D2682356C15800EC34AE /* UIView+HelperMethods.m in Sources */,
+				A501DCDE221A64E600760570 /* UBKAccessibilityValidColour.m in Sources */,
+				5450C0F621B886EC00A2CFBF /* UBKAccessibilityManager.m in Sources */,
+				A5794DAA2251C6DE001D9B75 /* UBKAccessibilityVisibleWarningView.m in Sources */,
+				A581A4EC2368F3DC00C8EBD7 /* UBKAccessibilityTouchView.m in Sources */,
+				9FFB519F236A85230044EFA1 /* UILabel+UBKAccessibility.m in Sources */,
+				A58559C121E848A0000C13AD /* UBKAccessibilityElementsTableViewController.m in Sources */,
+				A58559D121EC0606000C13AD /* UBKAccessibilityValidation.m in Sources */,
+				9FFB51A8236A91420044EFA1 /* UITextField+UBKAccessibility.m in Sources */,
+				A58559C721E85456000C13AD /* UBKAccessibilityButton.m in Sources */,
+				A53E5B8F2318FC76004EC911 /* UBKAccessibilityTouchAnimations.m in Sources */,
+				A57B2C4A21E2CB6F00DA582E /* UBKContrastTableViewCell.m in Sources */,
+				A54BF49C2252E07300DB8B90 /* UBKAccessibilityInspectorGutterContainerView.m in Sources */,
+				A512A580220864700085D65B /* UBKAccessibilitySuggestionViewController.m in Sources */,
+				9FFB51A3236A8AAB0044EFA1 /* UIButton+UBKAccessibility.m in Sources */,
+				9FFB51B0236A916D0044EFA1 /* UISwitch+UBKAccessibility.m in Sources */,
+				A53E5B272317B147004EC911 /* UBKAccessibilityHighlightAction.m in Sources */,
+				A5A8D26D2356C18E00EC34AE /* UBKReportUIElementCollectionViewCell.m in Sources */,
+				A5A8D2742356C1CA00EC34AE /* UBKAccessibilityReportViewController.m in Sources */,
+				9FFB51BC236AA5920044EFA1 /* CALayer+HelperMethods.m in Sources */,
+				5450C0EF21B886C400A2CFBF /* UBKAccessibilitySection.m in Sources */,
+				9FFB51B8236A918E0044EFA1 /* UITextView+UBKAccessibility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A514AEA42224797200593757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5355760236F6901009B4577 /* UBKAccessibilityColourTests.m in Sources */,
+				A535576C236F698B009B4577 /* UBKAccessibilitySliderTests.m in Sources */,
+				A5355766236F6969009B4577 /* UBKAccessibilityTextViewTests.m in Sources */,
+				A5355768236F6975009B4577 /* UBKAccessibilityImageViewTests.m in Sources */,
+				A5355764236F6950009B4577 /* UBKAccessibilityTextFieldTests.m in Sources */,
+				A5355762236F693F009B4577 /* UBKAccessibilityButtonTests.m in Sources */,
+				A535575E236F689D009B4577 /* UBKAccessibilityLabelTests.m in Sources */,
+				A535576A236F6980009B4577 /* UBKAccessibilitySwitchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5450C0DF21B8867300A2CFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5450C0D821B8867300A2CFBF /* UBKAccessibilityKit */;
+			targetProxy = 5450C0DE21B8867300A2CFBF /* PBXContainerItemProxy */;
+		};
+		A52CFBD52224CB8900330DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5450C0D821B8867300A2CFBF /* UBKAccessibilityKit */;
+			targetProxy = A52CFBD42224CB8900330DEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		542374F821AF64DF00959D24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542374F921AF64DF00959D24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		542374FD21AF64E100959D24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542374FE21AF64E100959D24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5423750321AF64E100959D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5423750421AF64E100959D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5423750621AF64E100959D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4N7C69CJ2;
+				INFOPLIST_FILE = "$(SRCROOT)/UBKAccessibility/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.ubank.opensource.${PRODUCT_NAME}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5423750721AF64E100959D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4N7C69CJ2;
+				INFOPLIST_FILE = "$(SRCROOT)/UBKAccessibility/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.ubank.opensource.${PRODUCT_NAME}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5450C0E321B8867300A2CFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UBKAccessibilityKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.ubank.opensource.UBKAccessibilityKit.${PRODUCT_NAME}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5450C0E421B8867300A2CFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UBKAccessibilityKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.ubank.opensource.UBKAccessibilityKit.${PRODUCT_NAME}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A514AEAF2224797200593757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UBKAccessibilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.ubank.opensource.UBKAccessibilityTests.${PRODUCT_NAME}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBKAccessibility.app/UBKAccessibility";
+			};
+			name = Debug;
+		};
+		A514AEB02224797200593757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C7F3C823A9B1C400888E98 /* UBKConfig.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UBKAccessibilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.ubank.opensource.UBKAccessibilityTests.${PRODUCT_NAME}${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBKAccessibility.app/UBKAccessibility";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		542374EA21AF64DF00959D24 /* Build configuration list for PBXProject "UBKAccessibility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5423750321AF64E100959D24 /* Debug */,
+				5423750421AF64E100959D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5423750521AF64E100959D24 /* Build configuration list for PBXNativeTarget "UBKAccessibility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5423750621AF64E100959D24 /* Debug */,
+				5423750721AF64E100959D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5450C0E221B8867300A2CFBF /* Build configuration list for PBXNativeTarget "UBKAccessibilityKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5450C0E321B8867300A2CFBF /* Debug */,
+				5450C0E421B8867300A2CFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A514AEB12224797200593757 /* Build configuration list for PBXNativeTarget "UBKAccessibilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A514AEAF2224797200593757 /* Debug */,
+				A514AEB02224797200593757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 542374E721AF64DF00959D24 /* Project object */;
+}

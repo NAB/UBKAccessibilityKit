@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UBKColourPickerTableViewController">
+            <connections>
+                <outlet property="addColourButton" destination="Z2g-x6-ojG" id="ih9-bC-JcP"/>
+                <outlet property="resetButton" destination="shd-vM-j3n" id="bKV-KF-dca"/>
+                <outlet property="swapColourButton" destination="5yW-Ti-nDJ" id="iaN-MK-rnT"/>
+                <outlet property="tableView" destination="FAU-H3-3hB" id="iVU-qV-VUd"/>
+                <outlet property="view" destination="89B-mp-wv5" id="Gzc-Nk-5Ou"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="89B-mp-wv5">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="276"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FAU-H3-3hB">
+                    <rect key="frame" x="0.0" y="0.0" width="367" height="232"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cHy-CC-4n9"/>
+                        <outlet property="delegate" destination="-1" id="T2G-8a-9HH"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpP-xK-P05">
+                    <rect key="frame" x="0.0" y="232" width="367" height="44"/>
+                    <items>
+                        <barButtonItem enabled="NO" title="Reset changes" id="shd-vM-j3n">
+                            <connections>
+                                <action selector="resetUIColour:" destination="-1" id="giC-cQ-5r3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="eqg-RW-77Y"/>
+                        <barButtonItem title="Swap colour" id="5yW-Ti-nDJ">
+                            <connections>
+                                <action selector="swapColour:" destination="-1" id="fA7-MS-Ozj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Add colour" id="Z2g-x6-ojG">
+                            <connections>
+                                <action selector="addNewColour:" destination="-1" id="hZB-fQ-7T0"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="FAU-H3-3hB" firstAttribute="top" secondItem="6b2-GK-tRL" secondAttribute="top" id="0sr-qs-Iqy"/>
+                <constraint firstItem="FAU-H3-3hB" firstAttribute="leading" secondItem="6b2-GK-tRL" secondAttribute="leading" id="HDP-qz-Qfj"/>
+                <constraint firstItem="jpP-xK-P05" firstAttribute="leading" secondItem="6b2-GK-tRL" secondAttribute="leading" id="RYQ-dV-AYJ"/>
+                <constraint firstItem="jpP-xK-P05" firstAttribute="trailing" secondItem="6b2-GK-tRL" secondAttribute="trailing" id="XmX-5X-5ny"/>
+                <constraint firstItem="jpP-xK-P05" firstAttribute="bottom" secondItem="6b2-GK-tRL" secondAttribute="bottom" id="cWS-tc-IdQ"/>
+                <constraint firstItem="FAU-H3-3hB" firstAttribute="trailing" secondItem="6b2-GK-tRL" secondAttribute="trailing" id="e3V-Kt-Yko"/>
+                <constraint firstItem="jpP-xK-P05" firstAttribute="top" secondItem="FAU-H3-3hB" secondAttribute="bottom" id="upf-Tl-vcL"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6b2-GK-tRL"/>
+            <point key="canvasLocation" x="130.40000000000001" y="330.13493253373315"/>
+        </view>
+    </objects>
+</document>

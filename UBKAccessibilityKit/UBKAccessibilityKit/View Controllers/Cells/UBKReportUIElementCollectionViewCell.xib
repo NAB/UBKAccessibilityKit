@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="UBKReportUIElementCollectionViewCell" id="gTV-IL-0wX" customClass="UBKReportUIElementCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="296"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="307" height="296"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqP-pN-1gL">
+                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="1" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-K0-YDu">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qR6-K0-YDu" firstAttribute="leading" secondItem="dqP-pN-1gL" secondAttribute="leading" id="2iT-jj-KVo"/>
+                            <constraint firstAttribute="width" secondItem="dqP-pN-1gL" secondAttribute="height" multiplier="1:1" id="CBs-KF-vbc"/>
+                            <constraint firstAttribute="bottom" secondItem="qR6-K0-YDu" secondAttribute="bottom" id="LWf-T5-He6"/>
+                            <constraint firstItem="qR6-K0-YDu" firstAttribute="top" secondItem="dqP-pN-1gL" secondAttribute="top" id="PRK-X5-Cjk"/>
+                            <constraint firstAttribute="trailing" secondItem="qR6-K0-YDu" secondAttribute="trailing" id="dPR-Gq-XUW"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="owh-Px-Cps"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukK-Mr-2YT">
+                        <rect key="frame" x="38" y="10" width="249" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sample image 3" translatesAutoresizingMaskIntoConstraints="NO" id="z7c-tz-8Mg">
+                        <rect key="frame" x="10" y="41" width="287" height="235"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8X1-DC-sdz">
+                        <rect key="frame" x="10" y="286" width="287" height="0.0"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="z7c-tz-8Mg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="15w-vt-C8X"/>
+                <constraint firstItem="8X1-DC-sdz" firstAttribute="top" secondItem="z7c-tz-8Mg" secondAttribute="bottom" constant="10" id="Kw1-l7-CeY"/>
+                <constraint firstItem="z7c-tz-8Mg" firstAttribute="top" secondItem="ukK-Mr-2YT" secondAttribute="bottom" constant="10.5" id="NKO-R9-FGu"/>
+                <constraint firstAttribute="trailing" secondItem="8X1-DC-sdz" secondAttribute="trailing" constant="10" id="Rvr-JA-EX7"/>
+                <constraint firstItem="dqP-pN-1gL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="mZc-Px-gXw"/>
+                <constraint firstItem="ukK-Mr-2YT" firstAttribute="leading" secondItem="dqP-pN-1gL" secondAttribute="trailing" constant="8" id="pgR-Qb-LKj"/>
+                <constraint firstItem="8X1-DC-sdz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qkt-3i-Xcq"/>
+                <constraint firstAttribute="trailing" secondItem="z7c-tz-8Mg" secondAttribute="trailing" constant="10" id="rOn-wk-iED"/>
+                <constraint firstItem="z7c-tz-8Mg" firstAttribute="top" secondItem="dqP-pN-1gL" secondAttribute="bottom" constant="11" id="sJX-7l-2kj"/>
+                <constraint firstItem="dqP-pN-1gL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="t5W-aG-3qw"/>
+                <constraint firstAttribute="trailing" secondItem="ukK-Mr-2YT" secondAttribute="trailing" constant="20" id="u0d-cX-0Hc"/>
+                <constraint firstItem="ukK-Mr-2YT" firstAttribute="top" secondItem="dqP-pN-1gL" secondAttribute="top" id="vor-z6-0Sa"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8X1-DC-sdz" secondAttribute="bottom" constant="10" id="wsa-TC-sdi"/>
+            </constraints>
+            <size key="customSize" width="307" height="296"/>
+            <connections>
+                <outlet property="classNameLabel" destination="ukK-Mr-2YT" id="Tqf-Oc-wh8"/>
+                <outlet property="elementImageView" destination="z7c-tz-8Mg" id="7MB-B9-YxD"/>
+                <outlet property="numberLabel" destination="qR6-K0-YDu" id="xcX-72-oDn"/>
+                <outlet property="numberView" destination="dqP-pN-1gL" id="ZqV-A3-eG7"/>
+                <outlet property="stackView" destination="8X1-DC-sdz" id="2MT-19-3fv"/>
+            </connections>
+            <point key="canvasLocation" x="323.91304347826087" y="235.04464285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sample image 3" width="1780" height="1000"/>
+    </resources>
+</document>
