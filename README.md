@@ -67,7 +67,7 @@ AppDelegate:
 
 In your AppDelegate.m add the following code.
 
-```sh
+```objc
 //Objective-C usage
 #import "UBKAccessibilityWindow.h"
 
@@ -87,7 +87,7 @@ In your AppDelegate.m add the following code.
 ```
 
 or in your AppDelegate.swift file add the following code.
-```
+```swift
 //Swift usage
 import UBKAccessibilityKit
 
